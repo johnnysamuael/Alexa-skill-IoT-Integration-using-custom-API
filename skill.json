@@ -1,0 +1,85 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Change color of your tesseract with Alexa",
+          "examplePhrases": [
+            "Alexa open virtual tesseract",
+            "Alexa Connect",
+            "Alexa Ask Virtual Tesseract to change color"
+          ],
+          "keywords": [
+            "Tesseract",
+            "Lights",
+            "Smart",
+            "light",
+            "friendship",
+            "lamp",
+            "connected",
+            "lamp",
+            "iot",
+            "lamps",
+            "long",
+            "distance",
+            "relationship",
+            "lamp"
+          ],
+          "name": "Virtual Tesseract",
+          "description": "Steps to connect :\n1. Say \"Virtual Tesseract\" to invoke the connection\n2. Say \"Connect\" followed by your lampcode. eg) Connect 126998\n3. Say \"Ask virtual tesseract to change color\" to change the color of your tesseract",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Connect with the lamp code \"8041714\" and try changing its color.",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "IN"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:591485630534:function:68afd139-da72-45fa-935a-27f27cfd20d5:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:591485630534:function:68afd139-da72-45fa-935a-27f27cfd20d5:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:591485630534:function:68afd139-da72-45fa-935a-27f27cfd20d5:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:591485630534:function:68afd139-da72-45fa-935a-27f27cfd20d5:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://tesseract.rezzlon.com/terms-of-service/",
+          "privacyPolicyUrl": "https://tesseract.rezzlon.com/privacy-policy/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

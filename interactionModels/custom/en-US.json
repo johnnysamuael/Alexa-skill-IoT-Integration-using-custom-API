@@ -1,0 +1,149 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "virtual tesseract",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "Connect",
+          "slots": [
+            {
+              "name": "LAMPCODE",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{LAMPCODE} is my lampcode",
+                "My lamp code is {LAMPCODE}"
+              ]
+            }
+          ],
+          "samples": [
+            "Connect tesseract {LAMPCODE}",
+            "Tesseract Connect {LAMPCODE}",
+            "Connect to my tesseract {LAMPCODE}",
+            "Connect to tesseract {LAMPCODE}"
+          ]
+        },
+        {
+          "name": "disconnect",
+          "slots": [],
+          "samples": [
+            "change my lamp code",
+            "change lamp code",
+            "connect a different testcode",
+            "disconnect with tesseract",
+            "disconnect my tesseract",
+            "disconnect "
+          ]
+        },
+        {
+          "name": "ChangeColor",
+          "slots": [],
+          "samples": [
+            "can you change the color ",
+            "changing the color ",
+            "change the color",
+            "color change",
+            "change color "
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "Connect",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.196428964932"
+          },
+          "slots": [
+            {
+              "name": "LAMPCODE",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1313192521402.1422918393239"
+              },
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.1313192521402.1422918393239.712660771139",
+                  "value": "10000"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.196428964932",
+        "variations": [
+          {
+            "type": "SSML",
+            "value": " \u003cspeak\u003eis the lamp Code \u003csay-as interpret-as\u003d\"digits\"\u003e{LAMPCODE} \u003c/say-as\u003e \u003c/speak\u003e"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1313192521402.1422918393239.712660771139",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tell me a valid lamp code"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1313192521402.1422918393239",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell me your lamp code"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "18"
+}
