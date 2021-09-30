@@ -67,7 +67,7 @@ const ConnectHandler = {
            
     
          
-       const webs = 'http://floodanalyser.com/iot/connectalexa.php?lampcode=' + speakOutput;
+       const webs = 'xyz.com/connectalexa.php?lampcode=' + speakOutput;
        
   await getRemoteData(webs)
       .then((response) => {
@@ -119,7 +119,7 @@ const ChangeColorHandler = {
       
     const lampno = sessionAttributes['lampcode'];
          
-       const webs = 'http://floodanalyser.com/iot/alexachange.php?lampcode=' + lampno;
+       const webs = 'xyz.com/iot/alexachange.php?lampcode=' + lampno;
        
   await getRemoteData(webs)
       .then((response) => {
