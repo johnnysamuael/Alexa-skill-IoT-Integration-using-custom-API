@@ -45,12 +45,11 @@ If color is not mentioned in the API request, the next color in the list is auto
 <img src="images/intent.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
 
 
-- Create a Intent and link it with a Intent launching phrases. These phrases triggers the function and performs it. 
-
-<img src="images/intent.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
-
-- A Intent SLot is a variable that is collected from the User by Alexa, which is stored as a persistant variable in the S3 bucket. So we create a Lamp Slot which gets the lampcode from the user which is later used for the API call. We can also use the inbuilt Intent SLot confirmation function to automatically verify the value with the user. 
+- A Intent SLot is a variable that is collected from the User by Alexa, which is stored as a persistant variable later using Attributes manager from the lambda code. Now create a Lamp Slot which gets the lampcode from the user which is later used for the API call. We can also use the inbuilt Intent SLot confirmation function to automatically verify the value with the user. 
 
 <img src="images/slot.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
 
-- 
+- With the basic configuration done, now we tap into the intent from the lambda code using the intent handler code block which handles the intent request call from the Alexa. 
+- We send an API Call to connect and change the color. The script hosted in the server is connected with the Lamp.
+
+
