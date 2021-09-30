@@ -56,7 +56,5 @@ If color is not mentioned in the API request, the next color in the list is auto
 
 # Demo
 
-<img src="images/demo1.png" alt="Alexa SKill IOT Intent"  >
-<img src="images/demo2.png" alt="Alexa SKill IOT Intent" >
-<img src="images/demo3.png" alt="Alexa SKill IOT Intent">
+<img src="images/demo1.png" alt="Alexa SKill IOT Intent" height="600" width="320">  <img src="images/demo2.png" alt="Alexa SKill IOT Intent" height="600" width="320">  <img src="images/demo3.png" alt="Alexa SKill IOT Intent" height="600" width="320">
 
