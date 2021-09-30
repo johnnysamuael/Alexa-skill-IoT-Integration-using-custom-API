@@ -36,6 +36,9 @@ If color is not mentioned in the API request, the next color in the list is auto
 
 ## Configurations of Alexa Developer Console
 
+- Create an Invocation Name, that will trigger the Alexa skill. In our case it is " Virtual Tesseract"
+
+<img src="images/invocation.png" alt="Alexa SKill IOT integration Diagram" >
 
 
   
