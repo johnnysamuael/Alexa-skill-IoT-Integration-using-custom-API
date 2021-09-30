@@ -38,7 +38,19 @@ If color is not mentioned in the API request, the next color in the list is auto
 
 - Create an Invocation Name, that will trigger the Alexa skill. In our case it is " Virtual Tesseract"
 
-<img src="images/invocation.png" alt="Alexa SKill IOT integration Diagram" >
+<img src="images/invocation.png" alt="Alexa SKill IOT Invocation" height="250" width="600" >
+
+- Create a Intent and link it with a Intent launching phrases. These phrases triggers the function and performs it. 
+
+<img src="images/intent.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
 
 
-  
+- Create a Intent and link it with a Intent launching phrases. These phrases triggers the function and performs it. 
+
+<img src="images/intent.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
+
+- A Intent SLot is a variable that is collected from the User by Alexa, which is stored as a persistant variable in the S3 bucket. So we create a Lamp Slot which gets the lampcode from the user which is later used for the API call. We can also use the inbuilt Intent SLot confirmation function to automatically verify the value with the user. 
+
+<img src="images/slot.png" alt="Alexa SKill IOT Intent" height="250" width="600" >
+
+- 
